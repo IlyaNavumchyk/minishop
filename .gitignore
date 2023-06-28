@@ -1,0 +1,12 @@
+# Log file
+*.log
+
+# Package Files #
+*.jar
+target
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
