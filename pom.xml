@@ -14,6 +14,12 @@
     <artifactId>minishop</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+    <packaging>pom</packaging>
+    
+    <modules>
+        <module>common</module>
+    </modules>
+
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
@@ -22,8 +28,6 @@
         <lombock.mapstruct.binding.version>0.2.0</lombock.mapstruct.binding.version>
         <open.api.version>1.6.15</open.api.version>
     </properties>
-
-    <packaging>pom</packaging>
 
     <dependencyManagement>
         <dependencies>
