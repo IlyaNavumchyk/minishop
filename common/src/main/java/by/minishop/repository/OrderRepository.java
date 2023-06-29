@@ -1,9 +1,11 @@
 package by.minishop.repository;
 
 import by.minishop.domain.Order;
-import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface OrderRepository extends PagingAndSortingRepository<Order, Long> {
+import java.util.Optional;
 
+public interface OrderRepository extends JpaRepository<Order, Long> {
 
+    Optional<Order> findById(Long id);
 }
